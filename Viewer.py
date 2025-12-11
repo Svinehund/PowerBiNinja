@@ -376,8 +376,8 @@ class ViewerGUI:
         tb.Entry(top, textvariable=self.reports_var, width=70).grid(row=1, column=1, sticky="we", padx=5, pady=(4,0))
         tb.Button(top, text="Browse", bootstyle=INFO, command=self.pick_reports_folder).grid(row=1, column=2, padx=4, pady=(4,0))
 
-        tb.Button(top, text="Run Scan", bootstyle=SUCCESS, command=self.run_scan).grid(row=0, column=3, padx=(15,5))
-        tb.Button(top, text="Load Results", bootstyle=PRIMARY, command=self.load_results).grid(row=1, column=3, padx=(15,5))
+        tb.Button(top, text="Run Scan", bootstyle=SUCCESS, width=15, command=self.run_scan).grid(row=0, column=3, padx=(15,5))
+        tb.Button(top, text="Load Results", bootstyle=PRIMARY,width=15, command=self.load_results).grid(row=1, column=3, padx=(15,5))
 
         top.columnconfigure(1, weight=1)
 
